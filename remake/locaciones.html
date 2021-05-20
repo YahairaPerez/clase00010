@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Diseño y nuevos medios, segunda versión remota" />
+        <title>EVALUACIÓN Nº2 &#127909;</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <link href="style.css" rel="stylesheet"/>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+            </style>
+    </head>
+    <body>
+        <div class="container fixed-top">
+            <nav class="d-flex justify-content-between py-3">
+                <p><a href="index.html"> <img src="images/logo4.png" width="50px" alt="Haz clic aquí para volver a la página de inicio" id="logo"> </a><a href="peliculas.html">Películas</a> <a href="locaciones.html" class="active">Locaciones</a> <a href="ganancias.html">Ganancias</a></p>
+            </nav>
+        <main>
+            <div id="mapa">
+                    <!--acá se mete el mapa-->
+            </div>
+        </main>
+        <div class="container fixed-bottom">
+                <footer class="d-flex justify-content-between py-3">    
+                    <div><a href="">Yahaira Pérez</a> </div>
+                    <div><a href="https://github.com/profesorfaco/dno037-2021">DNO037</a></div>
+                </footer>
+        </div>
+<script>
+    var mymap = L.map('mapa').setView([53.7813885,-11.9539592], 5.25);
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+        maxZoom: 18,
+        id: "mapbox/light-v10",
+        tileSize: 512,
+        zoomOffset: -1
+    }).addTo(mymap);
+
+var myIcon = L.icon({
+                    iconUrl: './images/iconomapa1.png',
+                    iconSize: [38, 40],
+                    
+               
+                });     
+             myIcon = L.marker([55.4155828, -1.7059204], {icon: myIcon}).addTo(mymap).bindPopup("Alnwick Castle, Reino Unido");
+
+var myIcon2 = L.icon({
+                    iconUrl: './images/iconomapa1.png',
+                    iconSize: [38, 40],
+                });    
+                    myIcon2 = L.marker([51.5318512, -0.1234736], {icon: myIcon2}).addTo(mymap).bindPopup("Estación de King’s Cross , Reino Unido");
+        
+var myIcon3 = L.icon({
+                    iconUrl: './images/iconomapa1.png',
+                    iconSize: [38, 40],
+                });    
+                    myIcon3 = L.marker([51.7855189,-2.7416238], {icon: myIcon3}).addTo(mymap).bindPopup("El bosque de Dean , Reino Unido"); 
+
+var myIcon4 = L.icon({
+                    iconUrl: './images/iconomapa2.png',
+                    iconSize: [38, 40],
+                });    
+                    myIcon4 = L.marker([56.8762172, -5.4317589], {icon: myIcon4}).addTo(mymap).bindPopup("Viaducto de Glenfinnan, Escocia");   
+        
+var myIcon5 = L.icon({
+                    iconUrl: './images/iconomapa3.png',
+                    iconSize: [38, 40],
+                });    
+                    myIcon5 = L.marker([51.6590512, -5.073964], {icon: myIcon5}).addTo(mymap).bindPopup("Playa de Freshwater West, Gales)");   
+          
+    
+    
+    
+                    
+   
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    </body>
+</html>
