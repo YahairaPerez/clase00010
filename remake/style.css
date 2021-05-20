@@ -25,21 +25,18 @@ body.portada{
 
 .titulo {
     font-family: 'New Rocker', cursive;
+    color: #ddd;
 }
 
 .harrypotterinfo {
     font-family: Arial, Helvetica, sans-serif;
+    color: #ddd;
 
 }
 
 #logo {
     position: absolute;
     top: 10px;
-}
-a {
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.5);
-    text-decoration: none;
 }
 
 a:hover {
@@ -67,43 +64,11 @@ nav p, footer p {
 }
 
 .active {
-    text-decoration: underline;
-    color: white;
+    color: rgb(212, 178, 26);
 }
 
 /* para la página de portada */
 
-header {   
-    width: 98%;
-    margin-left:1%;
-    margin-right:1%;
-    min-height: 80vh;
-}
-
-header div{
-    width: 50%;
-    padding-top:15vh;
-}
-
-header div h1{
-    font-size:calc(1.5rem + 1vw);
-    line-height: 1;
-    text-shadow: 0 0 2px var(--fondo);
-}
-
-header div p{
-    margin-top:1rem;
-    line-height: 1.5;
-    text-shadow: 0 0 2px var(--fondo);
-}
-
-@media screen and (orientation:portrait){
-
-    header div{
-        width: 100%;
-        line-height: 1.5;
-    }     
-}
 
 /* para todas las páginas que no son portada */
 
@@ -142,6 +107,8 @@ main article div{
 main article div h2{
     font-size:1rem;
     letter-spacing: 0.05rem;
+    font-family: Arial, Helvetica, sans-serif; 
+    color: #ddd;
 }
 
 @media screen and (orientation:portrait){
@@ -171,8 +138,8 @@ main section h3{
     font-size:1.3rem;
     line-height: 2.5;
     font-family: Arial, Helvetica, sans-serif;
-   
 }
+
 
 main section h4{
     font-size:1.2rem;
