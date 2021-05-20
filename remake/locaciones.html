@@ -7,27 +7,25 @@
         <title>EVALUACIÓN Nº2 &#127909;</title>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-        <link href="style.css" rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+        <link rel="stylesheet" href="style.css" />
         <style>
             @import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
             </style>
     </head>
     <body>
-        <div class="container fixed-top">
-            <nav class="d-flex justify-content-between py-3">
+        <div class="container">
+            <nav>
                 <p><a href="index.html"> <img src="images/logo4.png" width="50px" alt="Haz clic aquí para volver a la página de inicio" id="logo"> </a><a href="peliculas.html">Películas</a> <a href="locaciones.html" class="active">Locaciones</a> <a href="ganancias.html">Ganancias</a></p>
             </nav>
-        <main>
-            <div id="mapa">
+            <main>
+                <div id="mapa">
                     <!--acá se mete el mapa-->
-            </div>
-        </main>
-        <div class="container fixed-bottom">
-                <footer class="d-flex justify-content-between py-3">    
-                    <div><a href="">Yahaira Pérez</a> </div>
-                    <div><a href="https://github.com/profesorfaco/dno037-2021">DNO037</a></div>
-                </footer>
+                </div>
+            </main>
+            <footer>
+                <p><a href="https://github.com/YahairaPerez">Yahaira Pérez</a> <a href="https://github.com/profesorfaco/dno037-2021">DNO037</a></p>
+            </footer>
         </div>
 <script>
     var mymap = L.map('mapa').setView([53.7813885,-11.9539592], 5.25);
@@ -76,7 +74,5 @@ var myIcon5 = L.icon({
                     
    
 </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-
     </body>
 </html>
